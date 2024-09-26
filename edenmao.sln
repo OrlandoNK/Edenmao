@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Core", "Edenmao.Core\Edenmao.Core.csproj", "{480C8D9A-AF8F-4CC3-A1D3-359A5E16353F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Infrastruture", "Edenmao.Infrastruture\Edenmao.Infrastruture.csproj", "{DB5A6C31-A226-43B1-8284-B93E30EB8E4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Infrastructure", "Edenmao.Infrastruture\Edenmao.Infrastructure.csproj", "{DB5A6C31-A226-43B1-8284-B93E30EB8E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
