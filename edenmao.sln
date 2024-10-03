@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Core", "Edenmao.Core\Edenmao.Core.csproj", "{62D8C36A-81E8-489D-A663-98894445A4BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edenmao.Core", "Edenmao.Core\Edenmao.Core.csproj", "{62D8C36A-81E8-489D-A663-98894445A4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Domain", "Edenmao.Domain\Edenmao.Domain.csproj", "{7DA0A580-7589-4227-A104-71B8881F0B7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edenmao.Infrastructure", "Edenmao.Infrastructure\Edenmao.Infrastructure.csproj", "{9B9456BD-9BB5-4633-9666-D69488B80E77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{62D8C36A-81E8-489D-A663-98894445A4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62D8C36A-81E8-489D-A663-98894445A4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D8C36A-81E8-489D-A663-98894445A4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DA0A580-7589-4227-A104-71B8881F0B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA0A580-7589-4227-A104-71B8881F0B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA0A580-7589-4227-A104-71B8881F0B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA0A580-7589-4227-A104-71B8881F0B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B9456BD-9BB5-4633-9666-D69488B80E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9456BD-9BB5-4633-9666-D69488B80E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9456BD-9BB5-4633-9666-D69488B80E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9456BD-9BB5-4633-9666-D69488B80E77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

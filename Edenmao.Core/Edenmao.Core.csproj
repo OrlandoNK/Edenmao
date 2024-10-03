@@ -7,11 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="UsesCases\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Specifications\" />
-    <Folder Include="Services\" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Services\**" />
+    <Compile Remove="Specifications\**" />
+    <Compile Remove="UsesCases\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Specifications\**" />
+    <EmbeddedResource Remove="UsesCases\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Services\**" />
+    <None Remove="Specifications\**" />
+    <None Remove="UsesCases\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Interface\" />
   </ItemGroup>
 
 </Project>
