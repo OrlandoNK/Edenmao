@@ -8,5 +8,8 @@ namespace Edenmao.Domain.Entities
 {
     internal class MetodoPago
     {
+        public int IDMetodoPago { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
     }
 }

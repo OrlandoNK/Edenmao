@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace Edenmao.Core.DTOs
 {
     internal class ArticuloDTO
-    {
+    { 
     }
 }
