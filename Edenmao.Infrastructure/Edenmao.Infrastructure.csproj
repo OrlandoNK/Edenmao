@@ -11,4 +11,9 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Edenmao.Core\Edenmao.Core.csproj" />
+    <ProjectReference Include="..\Edenmao.Domain\Edenmao.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

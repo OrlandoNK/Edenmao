@@ -24,4 +24,8 @@
     <None Remove="UsesCases\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Edenmao.Domain\Edenmao.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
