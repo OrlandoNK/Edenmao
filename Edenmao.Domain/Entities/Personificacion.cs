@@ -8,15 +8,16 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Domain.Entities
 {
-    public class Roles
+    public class Personificacion
     {
         [Key]
-        public int IDRolUsuario { get; set; }
+        public int IDPersonificacion { get; set; }
         [StringLength(30)]
         public string Nombre { get; set; }
+        [StringLength(50)]
+        public string Descripcion { get; set;}
 
-        [InverseProperty("IDRolUsuarioNav")]
-        public virtual ICollection<Usuarios> Usuarios { get; set; } = new List<Usuarios>();
-
+        [InverseProperty("IDPersonificacionNav")]
+        public virtual ICollection<Articulo> Articulos { get; set; } = new List<Articulo>();
     }
 }
