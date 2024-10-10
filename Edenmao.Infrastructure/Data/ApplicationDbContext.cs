@@ -26,7 +26,7 @@ namespace Edenmao.Infrastructure.Data
         public virtual DbSet<Personificacion> Personificacions { get; set; }
         public virtual DbSet<Roles> Roless { get; set; }
         public virtual DbSet<Usuarios> Usuarioss { get; set; }
-       
+       //edward
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       => optionsBuilder.UseSqlServer("Server=DESKTOP-FSUML67\\SQLEXPRESS;Database=TimelyDBApplication;integrated security=true; TrustServerCertificate=True");
         //Creando las Relaciones
