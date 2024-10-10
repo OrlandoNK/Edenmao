@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Edenmao.Infrastructure.Data;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("edenmaoConnection")));
-
+builder.Services.AddDbContext<ApplicationDbContext>(op =>
+{
+    op.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
+});
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

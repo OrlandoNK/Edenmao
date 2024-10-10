@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Infrastructure.Data
 {
-    public class ApplicationDbContext : DbContext
+    public partial class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext()
         {
         }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
         {
         }
         public virtual DbSet<Articulo> Articulose  { get; set; }
@@ -25,7 +26,9 @@ namespace Edenmao.Infrastructure.Data
         public virtual DbSet<Personificacion> Personificacions { get; set; }
         public virtual DbSet<Roles> Roless { get; set; }
         public virtual DbSet<Usuarios> Usuarioss { get; set; }
-
+       
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+      => optionsBuilder.UseSqlServer("Server=DESKTOP-FSUML67\\SQLEXPRESS;Database=TimelyDBApplication;integrated security=true; TrustServerCertificate=True");
         //Creando las Relaciones
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

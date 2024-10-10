@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Domain.Entities
 {
-    public class DetallePedidos
+    public partial class DetallePedidos
     { 
         public int IDDetallePedido { get; set; }
         public int IDPedido { get; set; }

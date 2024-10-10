@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Domain.Entities
 {
-    public class Articulo
+    public partial class Articulo
     {
         [Key]
         public int IDArticulo { get; set; }
@@ -27,8 +27,8 @@ namespace Edenmao.Domain.Entities
 
         [ForeignKey("IDPersonificacion")]
         public virtual Personificacion? IDPersonificacionNav { get; set; }
-        
+
         [InverseProperty("IDArticuloNav")]
-        public virtual ICollection<DetallePedidos> DetallePedidos { get; set; } = new List<DetallePedidos>();
+        public virtual ICollection<DetallePedidos_Articulos> DetallePedido_Articulo { get; set; } = new List<DetallePedidos_Articulos>();
     }
 }

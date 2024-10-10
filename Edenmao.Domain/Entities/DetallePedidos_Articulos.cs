@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Domain.Entities
 {
-    public class DetallePedidos_Articulos
+    [Table ("DetallePedidos_Articulos")]
+    public partial class DetallePedidos_Articulos
     {
         [Key]
         public int IDDetalleArticulo { get; set; }
@@ -19,6 +20,6 @@ namespace Edenmao.Domain.Entities
         public virtual Pedidos? IDPedidoNav { get; set; }
 
         [ForeignKey("IDArticulo")]
-        public virtual Personificacion? IDArticuloNav { get; set; }
+        public virtual Articulo? IDArticuloNav { get; set; }
     }
 }

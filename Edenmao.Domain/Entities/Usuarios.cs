@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Edenmao.Domain.Entities
 {
-    public class Usuarios
+    public partial class Usuarios
     {
         [Key]
         public int IDUsuario { get; set; }
